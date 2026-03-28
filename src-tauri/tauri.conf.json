@@ -7,13 +7,13 @@
   "build": {
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
-    "devPath": "src",
-    "distDir": "src"
+    "distDir": "../src",
+    "devPath": "../src"
   },
   "tauri": {
     "bundle": {
-      "identifier": "com.example.tauri_python_app",
-      "icon": ["icons/icon.png"],
+      "identifier": "com.tauri.python.app",
+      "icon": [],
       "targets": ["exe"]
     },
     "windows": [
