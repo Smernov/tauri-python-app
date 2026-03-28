@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input id="num" type="number"/>
+    <button id="btn">Compute</button>
+    <p id="result"></p>
+    <script>
+      const { invoke } = window.__TAURI__.tauri;
+      document.getElementById('btn').onclick = async () => {
+        const num = parseInt(document.getElementById('num').value);
+        const res = await invoke('compute_square', { number: num });
+        document.getElementById('result').textContent = 'Result: ' + res;
+      };
+    </script>
+  </body>
+</html>
