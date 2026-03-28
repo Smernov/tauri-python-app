@@ -1,9 +1,21 @@
 {
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devPath": "../src",
+    "distDir": "../src"
+  },
   "package": {
     "productName": "TauriPythonApp",
     "version": "0.1.0"
   },
   "tauri": {
+    "bundle": {
+      "identifier": "com.example.tauri_python_app",
+      "icon": ["icons/icon.png"],
+      "targets": ["msi", "msix", "exe"]
+    },
     "windows": [
       {
         "title": "Tauri Python App",
@@ -11,16 +23,11 @@
         "height": 600
       }
     ],
-    "bundle": {
-      "identifier": "com.example.tauri_python_app",
-      "icon": ["icons/icon.png"],
-      "targets": ["msi", "msix", "exe"]
+    "allowlist": {
+      "all": true
     },
     "security": {
       "csp": null
-    },
-    "allowlist": {
-      "all": true
     }
   }
 }
