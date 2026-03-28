@@ -1,1 +1,14 @@
-
+{
+  "name": "tauri-python-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.7.3",
+    "@tauri-apps/api": "^2.7.3"
+  },
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build"
+  }
+}
