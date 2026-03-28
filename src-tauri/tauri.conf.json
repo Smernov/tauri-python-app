@@ -1,1 +1,27 @@
-
+{
+  "package": {
+    "productName": "TauriPythonApp",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "identifier": "com.example.tauri_python_app",
+      "icon": ["icons/icon.png"],
+      "targets": ["all"]
+    },
+    "windows": [
+      {
+        "title": "Tauri Python App",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "allowlist": {
+      "all": true
+    },
+    "security": {
+      "csp": null
+    }
+  }
+}
